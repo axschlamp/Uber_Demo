@@ -151,12 +151,6 @@ extension ViewController: GMSAutocompleteViewControllerDelegate {
                 
                 mapView.addAnnotation(destAnnotation)
                 
-//                // Add Polyline from starting to end destination
-//                if let startingLocation = loc.startingLocation?.coordinate {
-//                    var polyline = MKPolyline(coordinates: [startingLocation, place.coordinate], count: 2)
-//                    mapView.add(polyline)
-//                }
-                
                 if let startingLocation = loc.startingLocation?.coordinate {
                     routePolylines(source: startingLocation, destination: place.coordinate)
                 }
