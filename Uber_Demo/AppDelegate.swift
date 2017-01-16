@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         GMSPlacesClient.provideAPIKey("AIzaSyBa1A9fPZMx01qNYowgSZFredyiHnW-KTQ")
         GMSServices.provideAPIKey("AIzaSyDX6kM3KY_YZwjr29CCXGNkso1TiMDEiCE")
         
-//        Configuration.setSandboxEnabled(true)
+        Configuration.setSandboxEnabled(true)
         
         LocationService.shareManager.requestLocation()
         
